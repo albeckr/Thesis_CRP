@@ -1,0 +1,9 @@
+# dependencies for CoRoDro
+tensorflow == 2.7.0
+numpy == 1.19.5
+ray == 1.10.0
+ray[tune]
+ray[rllib]
+networkx == 2.6.3
+cudatoolkit
+matplotlib == 3.4.2
