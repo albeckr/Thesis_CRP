@@ -1,0 +1,402 @@
+{
+  "dueling": false,
+  "env": "<class '__main__.Map_Environment'>",
+  "env_config": {
+    "BASELINE_FLAG": false,
+    "BASELINE_OPT_CONSTANT": 2.5,
+    "BASELINE_TIME_CONSTRAINT": 10,
+    "CHARGING_STATION_NODES": [
+      0,
+      1,
+      5,
+      7,
+      9,
+      12
+    ],
+    "DEBUG_LOGS": false,
+    "INIT_NUMBER_OF_PARCELS": 15,
+    "MAX_BATTERY_POWER": 100,
+    "MAX_NUMBER_OF_PARCELS": 15,
+    "NUMBER_OF_CARS": 2,
+    "NUMBER_OF_DRONES": 2,
+    "NUMBER_STEPS_PER_EPISODE": 1200,
+    "RANDOM_SEED": null,
+    "REWARDS": {
+      "PARCEL_DELIVERED": 200,
+      "STEP_PENALTY": -0.1
+    },
+    "THRESHOLD_ADD_NEW_PARCEL": 0.1,
+    "TOPOLOGY": {
+      "edges": {
+        "e01": {
+          "air": 5,
+          "from": 0,
+          "road": 5,
+          "to": 4
+        },
+        "e02": {
+          "air": 5,
+          "from": 4,
+          "road": 5,
+          "to": 0
+        },
+        "e03": {
+          "air": 3,
+          "from": 0,
+          "road": 3,
+          "to": 1
+        },
+        "e04": {
+          "air": 3,
+          "from": 1,
+          "road": 3,
+          "to": 0
+        },
+        "e05": {
+          "air": 2,
+          "from": 0,
+          "road": -1,
+          "to": 2
+        },
+        "e06": {
+          "air": 2,
+          "from": 2,
+          "road": -1,
+          "to": 0
+        },
+        "e07": {
+          "air": 4,
+          "from": 1,
+          "road": 8,
+          "to": 3
+        },
+        "e08": {
+          "air": 4,
+          "from": 3,
+          "road": 8,
+          "to": 1
+        },
+        "e11": {
+          "air": 2,
+          "from": 1,
+          "road": -1,
+          "to": 2
+        },
+        "e12": {
+          "air": 2,
+          "from": 2,
+          "road": -1,
+          "to": 1
+        },
+        "e13": {
+          "air": 4,
+          "from": 1,
+          "road": 8,
+          "to": 5
+        },
+        "e14": {
+          "air": 4,
+          "from": 5,
+          "road": 8,
+          "to": 1
+        },
+        "e15": {
+          "air": 5,
+          "from": 1,
+          "road": 5,
+          "to": 6
+        },
+        "e16": {
+          "air": 5,
+          "from": 6,
+          "road": 5,
+          "to": 1
+        },
+        "e17": {
+          "air": 5,
+          "from": 2,
+          "road": 10,
+          "to": 3
+        },
+        "e18": {
+          "air": 5,
+          "from": 3,
+          "road": 10,
+          "to": 2
+        },
+        "e19": {
+          "air": 6,
+          "from": 3,
+          "road": 12,
+          "to": 12
+        },
+        "e20": {
+          "air": 6,
+          "from": 12,
+          "road": 12,
+          "to": 3
+        },
+        "e21": {
+          "air": 5,
+          "from": 4,
+          "road": 5,
+          "to": 5
+        },
+        "e22": {
+          "air": 5,
+          "from": 5,
+          "road": 5,
+          "to": 4
+        },
+        "e23": {
+          "air": 5,
+          "from": 5,
+          "road": 5,
+          "to": 6
+        },
+        "e24": {
+          "air": 5,
+          "from": 6,
+          "road": 5,
+          "to": 5
+        },
+        "e25": {
+          "air": 5,
+          "from": 6,
+          "road": 10,
+          "to": 12
+        },
+        "e26": {
+          "air": 5,
+          "from": 12,
+          "road": 10,
+          "to": 6
+        },
+        "e27": {
+          "air": -1,
+          "from": 12,
+          "road": 10,
+          "to": 13
+        },
+        "e28": {
+          "air": -1,
+          "from": 13,
+          "road": 10,
+          "to": 12
+        },
+        "e29": {
+          "air": -1,
+          "from": 4,
+          "road": 3,
+          "to": 7
+        },
+        "e30": {
+          "air": -1,
+          "from": 7,
+          "road": 3,
+          "to": 4
+        },
+        "e31": {
+          "air": -1,
+          "from": 5,
+          "road": 3,
+          "to": 8
+        },
+        "e32": {
+          "air": -1,
+          "from": 8,
+          "road": 3,
+          "to": 5
+        },
+        "e33": {
+          "air": -1,
+          "from": 6,
+          "road": 3,
+          "to": 9
+        },
+        "e34": {
+          "air": -1,
+          "from": 9,
+          "road": 3,
+          "to": 6
+        },
+        "e35": {
+          "air": 3,
+          "from": 8,
+          "road": 8,
+          "to": 7
+        },
+        "e36": {
+          "air": 3,
+          "from": 7,
+          "road": 8,
+          "to": 8
+        },
+        "e37": {
+          "air": 3,
+          "from": 8,
+          "road": 8,
+          "to": 9
+        },
+        "e38": {
+          "air": 3,
+          "from": 9,
+          "road": 8,
+          "to": 8
+        },
+        "e39": {
+          "air": 2,
+          "from": 7,
+          "road": 6,
+          "to": 10
+        },
+        "e40": {
+          "air": 2,
+          "from": 10,
+          "road": 6,
+          "to": 7
+        },
+        "e41": {
+          "air": 3,
+          "from": 10,
+          "road": 12,
+          "to": 11
+        },
+        "e42": {
+          "air": 3,
+          "from": 11,
+          "road": 12,
+          "to": 10
+        },
+        "e43": {
+          "air": 5,
+          "from": 9,
+          "road": 10,
+          "to": 11
+        },
+        "e44": {
+          "air": 5,
+          "from": 11,
+          "road": 10,
+          "to": 9
+        }
+      },
+      "nodes": {
+        "0": {
+          "id": 1,
+          "type": "parking"
+        },
+        "1": {
+          "id": 1,
+          "type": "parking"
+        },
+        "2": {
+          "id": 2,
+          "type": "parking"
+        },
+        "3": {
+          "id": 3,
+          "type": "parking"
+        },
+        "4": {
+          "id": 4,
+          "type": "parking"
+        },
+        "5": {
+          "id": 5,
+          "type": "parking"
+        },
+        "6": {
+          "id": 6,
+          "type": "parking"
+        },
+        "7": {
+          "id": 7,
+          "type": "parking"
+        },
+        "8": {
+          "id": 8,
+          "type": "parking"
+        },
+        "9": {
+          "id": 9,
+          "type": "parking"
+        },
+        "10": {
+          "id": 10,
+          "type": "parking"
+        },
+        "11": {
+          "id": 11,
+          "type": "parking"
+        },
+        "12": {
+          "id": 10,
+          "type": "parking"
+        },
+        "13": {
+          "id": 11,
+          "type": "road"
+        }
+      }
+    }
+  },
+  "hiddens": [],
+  "multiagent": {
+    "policies": {
+      "c_2": [
+        null,
+        null,
+        null,
+        {
+          "framework": "tf",
+          "model": {
+            "custom_model": "<class '__main__.ParametricAgentModel'>"
+          }
+        }
+      ],
+      "c_3": [
+        null,
+        null,
+        null,
+        {
+          "framework": "tf",
+          "model": {
+            "custom_model": "<class '__main__.ParametricAgentModel'>"
+          }
+        }
+      ],
+      "d_0": [
+        null,
+        null,
+        null,
+        {
+          "framework": "tf",
+          "model": {
+            "custom_model": "<class '__main__.ParametricAgentModel'>"
+          }
+        }
+      ],
+      "d_1": [
+        null,
+        null,
+        null,
+        {
+          "framework": "tf",
+          "model": {
+            "custom_model": "<class '__main__.ParametricAgentModel'>"
+          }
+        }
+      ]
+    },
+    "policies_to_train": [
+      "d_0",
+      "d_1",
+      "c_2",
+      "c_3"
+    ],
+    "policy_mapping_fn": "<function policy_mapping_fn at 0x7fe0838849d0>"
+  },
+  "num_gpus": 1,
+  "num_workers": 20
+}
